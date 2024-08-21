@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="./css/navBar.css">
     <link rel="stylesheet" href="./css/bottomList.css">
     <link rel="stylesheet" href="./css/toy.css">
-
-    <!-- 先停用還要測試 -->
-    <!-- <link rel="stylesheet" href="./css/imgFlow_test.css"> -->
+    <link rel="stylesheet" href="./css/imgFlow_test.css">
 
     <!-- 不要的 -->
     <!-- <link rel="stylesheet" href="./css/imgFlow_test2.css"> -->
@@ -59,7 +57,7 @@
             <div class="toyimg"><img src="./img/store/chu_chi800x.png"></div>
             <div class="toyname">懶散兔與啾先生招財公仔 [啾先生]</div>
             <div class="toyprice">$490</div>
-            <div><button>-</button>0 <button>+</button></div>
+            <div class="toynum"><input type="number" min="0" max="99" value="0"></div>
         </div>
 
     </section>
@@ -118,8 +116,13 @@
 
     </div>
 
-    <!-- 購物車Function 代入-->
-    <script src="./js/buycart.js"></script>
+    <!-- 測試-->
+    <script>
+        var buyNum = document.getElementById('a1').value;
+        console.log(buyNum);
+
+
+    </script>
 
 </body>
 

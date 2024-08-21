@@ -1,0 +1,66 @@
+
+    <!-- 訂購表單 -->
+    <section class="p-5">
+        <div class="container">
+            <h2>填寫訂單</h2>
+            <form action="" class="submitForm">
+                <div class="mb-3">
+                    <label for="customerName">姓名</label>
+                    <input type="text" placeholder="請輸入姓名" id="customerName" name="姓名">
+                    <p class="text-danger" data-msg="姓名"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="customerTel">電話</label>
+                    <input type="phone" placeholder="請輸入手機號碼" id="customerPhone" name="手機號碼">
+                    <p class="text-danger" data-msg="手機號碼"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="customerEmail">email</label>
+                    <input type="text" placeholder="請輸入 email" id="customerEmail" name="信箱">
+                    <p class="text-danger" data-msg="信箱"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="customerAddress">地址</label>
+                    <input type="text" placeholder="請輸入地址" id="customerAddress" name="地址">
+                    <p class="text-danger" data-msg="地址"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="payMethod">交易方式</label>
+                    <select name="交易方式" id="payMethod">
+                        <option value="ATM">ATM</option>
+                        <option value="信用卡">信用卡</option>
+                        <option value="超商付款">超商付款</option>
+                    </select>
+                    <p class="text-danger" data-msg="交易方式"></p>
+                </div>
+                <input type="submit" class="submitBtn" value="送出訂單">
+            </form>
+        </div>
+    </section>
+
+    <!-- 購物車 -->
+    <section class="p-5">
+        <div class="container">
+            <h2>購物車列表</h2>
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-danger" id="delAllCartBtn">刪除全部</button>
+            </div>
+
+            <ul class="cartList mt-3 p-3 border">
+                <!-- 動態顯示購物車 -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- 產品 -->
+    <section class="p-5">
+        <div class="container">
+            <h2 class="my-3">產品列表</h2>
+            <select class="productSelect form-select mb-3" aria-label="Default select example">
+            </select>
+            <div class="row productList">
+            </div>
+        </div>
+    </section>
+ <!-- sweetalert2.js -->
+    <script src="./js/cart1_.js"></script>
