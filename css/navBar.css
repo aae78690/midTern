@@ -1,0 +1,36 @@
+/* 頁面索引樣式 */
+.navBar {
+    list-style-type: none;
+    text-align: center;
+    background-color: #ebb00f;
+    position: relative;
+    /* top: 0;
+    width: 100%; */
+}
+
+/* navBar裡面的所有li */
+.navBar li {
+    display: inline-block;
+    padding: 20px;
+}
+
+/* narBar 裡面的 li 項目被鼠標碰到時(hover)呈現的樣式 */
+.navBar li:hover {
+    background-color: #dbbc56;
+}
+
+/* 1.文字顏色 2.置中 3.取消超連結底線 */
+.navBar li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size:larger;
+    
+}
+/* 頁首永遠置頂 */
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+  }

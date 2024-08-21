@@ -1,0 +1,21 @@
+.toyimg {
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+}
+
+.toyimg img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+.toyname{
+    background-color: chartreuse;
+    width: 250px;
+    text-align: center;
+}
+.toyprice{
+    background-color: darksalmon;
+    text-align: center;
+    width: 250px;
+}
