@@ -1,0 +1,29 @@
+/* LOGO樣式設計 */
+.LOGO {
+    background-image: url(../img/logo/bg.png);
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    background-color: transparent;
+    /* 永遠置頂 */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    z-index: 1;
+}
+
+.Lo {
+    height: auto;
+    max-width: 100%;
+}
+
+.rightupbox {
+    text-align: right;
+}
+
+.rightupbox a {
+
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin-right: 10px;
+}

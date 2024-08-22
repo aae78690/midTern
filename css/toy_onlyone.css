@@ -1,0 +1,58 @@
+
+ /* 包住上方畫面的外框 */
+.upinfo {
+    /* width: 800px; */
+    margin: auto;
+    border: solid 1px gray;
+    overflow: hidden;
+}
+
+/* 包住圖片的外框 */
+.toyimg {
+    background-color: aqua;
+    width: 600px;
+    /*圖片在左邊*/
+    float: left;
+    /* padding: 20px; */
+    /* height: 500px; */
+}
+/* 圖片本身 */
+.toyimg img {
+    display: block;
+    width: 100%;
+    /* height: 500px; */
+    /* object-fit: cover; */
+}
+
+/* 商品說明 */
+.detailinfo {
+    float: left;
+    margin:0px 0px 0px 50px;
+    width: 430px;
+    padding: 20px 20px 0px 0px;
+
+}
+
+.toyname {
+    background-color: chartreuse;
+    text-align: center;
+    width: 250px;
+}
+
+.toyprice {
+    background-color: darksalmon;
+    text-align: center;
+    width: 250px;
+}
+/* 下方商品規格 */
+.bottominfo {
+    margin: 20px 0px 0px 0px;
+    border: solid 1px gray;
+    overflow: hidden;
+}
+.bottominfo h2{
+    text-align: center;
+}
+.bottominfo p{
+    margin: 0px 0px 0px 10px;
+}

@@ -1,3 +1,12 @@
+.toyBox{
+    width:250px; /*<div>一定要先設定寬度之後才能使用 float 做水平排列 */ 
+ 
+    float:left; /*使用 float 做水平排列 */
+    background-color:#eeee83c7; 
+    margin-left:12px; /* 設定欄位的左邊外間距 */ 
+    margin-top: 100px;
+}
+
 .toyimg {
     background-color: aqua;
     width: 250px;
@@ -18,4 +27,8 @@
     background-color: darksalmon;
     text-align: center;
     width: 250px;
+}
+/* 清除左右浮動(float) */
+.floatclean{
+    clear: both;
 }

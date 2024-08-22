@@ -1,0 +1,13 @@
+.cover2 {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.cover2 a {
+    display: block;
+}
+
+.cover2 a img {
+    max-width: 100%;
+}

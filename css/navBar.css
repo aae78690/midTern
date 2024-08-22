@@ -4,14 +4,12 @@
     text-align: center;
     background-color: #ebb00f;
     position: relative;
-    /* top: 0;
-    width: 100%; */
 }
 
 /* navBar裡面的所有li */
 .navBar li {
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
 }
 
 /* narBar 裡面的 li 項目被鼠標碰到時(hover)呈現的樣式 */
@@ -27,11 +25,11 @@
     font-size:larger;
     
 }
-/* 頁首永遠置頂 */
-.header {
+/* 永遠置頂 */
+/* .header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     max-width: 100%;
     z-index: 1;
-  }
+  } */
