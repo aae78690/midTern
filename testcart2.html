@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡易購物車</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .product-details {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .cart {
+            margin-top: 30px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .cart-total {
+            margin-top: 20px;
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .add-to-cart-btn {
+            padding: 5px 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .remove-from-cart-btn {
+            padding: 5px 10px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- <div class="container">
+    <h1>商品列表</h1>
+    <div class="product">
+        <img src="product1.jpg" alt="Product 1">
+        <div class="product-details">
+            <h2>商品 1</h2>
+            <p>價格: $100</p>
+        </div>
+        <button class="add-to-cart-btn" onclick="addToCart('商品 1', 100)">加入購物車</button>
+    </div>
+    <div class="product">
+        <img src="product2.jpg" alt="Product 2">
+        <div class="product-details">
+            <h2>商品 2</h2>
+            <p>價格: $150</p>
+        </div>
+        <button class="add-to-cart-btn" onclick="addToCart('商品 2', 150)">加入購物車</button>
+    </div> -->
+
+    <h1>購物車</h1>
+    <div class="cart" id="cart">
+        <p>購物車是空的。</p>
+    </div>
+    <div class="cart-total" id="cartTotal">總價: $0</div>
+</div>
+
+<script>
+    let cart = [];
+    
+    function addToCart(name, price) {
+        // 檢查商品是否已存在購物車中
+        const existingItem = cart.find(item => item.name === name);
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push({ name, price, quantity: 1 });
+        }
+        updateCart();
+    }
+
+    function removeFromCart(name) {
+        cart = cart.filter(item => item.name !== name);
+        updateCart();
+    }
+
+    function updateCart() {
+        const cartContainer = document.getElementById('cart');
+        const cartTotal = document.getElementById('cartTotal');
+        cartContainer.innerHTML = ''; // 清空購物車內容
+        
+        if (cart.length === 0) {
+            cartContainer.innerHTML = '<p>購物車是空的。</p>';
+            cartTotal.textContent = '總價: $0';
+            return;
+        }
+        
+        let total = 0;
+        
+        cart.forEach(item => {
+            total += item.price * item.quantity;
+            const cartItem = document.createElement('div');
+            cartItem.className = 'cart-item';
+            cartItem.innerHTML = `
+                <span>${item.name} (x${item.quantity}) - $${item.price * item.quantity}</span>
+                <button class="remove-from-cart-btn" onclick="removeFromCart('${item.name}')">移除</button>
+            `;
+            cartContainer.appendChild(cartItem);
+        });
+        
+        cartTotal.textContent = `總價: $${total}`;
+    }
+</script>
+
+</body>
+</html>

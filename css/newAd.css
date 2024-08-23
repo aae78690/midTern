@@ -1,0 +1,17 @@
+.newAd {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.newAd img {
+    display: block;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.newAditem{
+    border: 1px solid gray;
+    border-radius: 20px;
+}

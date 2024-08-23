@@ -7,8 +7,11 @@
     <title>樂玩 TheOne:各式盒玩周邊</title>
     <link rel="stylesheet" href="./css/bottomList.css">
     <link rel="stylesheet" href="./css/navBar.css">
-    <link rel="stylesheet" href="./css/imgFlow_test.css">
     <link rel="stylesheet" href="./css/logo.css">
+    <link rel="stylesheet" href="./css/joinmember.css">
+    <link rel="stylesheet" href="./css/loginmember.css">
+
+    <link rel="stylesheet" href="./css/newAd.css">
 
     <!-- 不要的 -->
     <!-- <link rel="stylesheet" href="./css/imgFlow_test2.css"> -->
@@ -21,14 +24,15 @@
     <div class="LOGO">
         <div class="rightupbox">
             <a href="">購物車</a>
-            <a href="">會員登入</a>
-            <a href="">加入會員</a>
+            <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
+            <button class="open-modal-btn" id="openModalBtn">加入會員</button>
         </div>
         <a href="./myHome.html"><img src="./img/logo/logo(100).png" class="Lo"></a>
 
         <!-- 頁首索引 -->
         <nav class="header">
             <ul class="navBar">
+                <li><a href="./myHome.html">首頁</a></li>
                 <li><a href="./newstore.html">最新優惠</a></li>
                 <li><a href="./allToy.html">所有商品</a></li>
                 <li><a href="./contactus.html">聯絡我們</a></li>
@@ -37,7 +41,107 @@
     </div>
 
     <!-- 頁面資訊 -->
-    
+    <h3 id="discount" style="text-align: center;">最新優惠</h3>
+    <hr>
+
+    <div class="newAd">
+        <!-- 優惠1 -->
+        <div class="newAditem">
+            <img src="./img/ad/saleoff72(1296x).png">
+            <ul>
+                <li>
+                    <strong>消費滿15000元，結帳再享72折團購優惠</strong>
+                </li>
+                <li><br></li>
+                <li>需加入會員，才可使用此優惠。</li>
+                <li>累積消費還可升級會員等級。</li>
+                <li>團購也享有累積點數回饋。(滿100元享有1點數回饋，可全數折抵消費)。</li>
+                <li>部分優惠、特殊商品不適用此項優惠折扣。</li>
+                <li>此團購優惠無法再與其他優惠合併使用。</li>
+                <li>配送方式僅限宅配。</li>
+            </ul>
+        </div>
+
+        <hr>
+        <!-- 優惠2 -->
+        <div class="newAditem">
+            <img src="./img/ad/loginget50(1296x).png">
+            <ul>
+                <li>
+                    <strong>『首次』</strong>加入會員即享有50元購物金
+                </li>
+                <li>加入後，每年生日月份享有100元購物金</li>
+                <li>不定時推出會員特別優惠</li>
+                <li>歡迎您加入會員唷！</li>
+            </ul>
+        </div>
+        <hr>
+
+        <!-- 優惠3 -->
+        <div class="newAditem">
+            <img src="./img/ad/up680nofee(1296x).png">
+            <ul>
+                <li>任意商品消費滿680元(含)以上</li>
+                <li>即享有免運優惠(僅限台灣地區)</li>
+                <li>快將心儀的商品加入購物車購買吧！</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 擬態窗口 加入會員-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>加入會員</h2>
+            <form>
+                <div class="joinmember">
+                    <label for="name">帳號:</label>
+                    <input type="text" id="account" name="account" pattern="[A-Za-z0-9]{8,}" title="至少填入8位英文或數字"
+                        required>
+                </div>
+                <div class="joinmember">
+                    <label for="name">密碼:</label>
+                    <input type="text" id="password" name="password" pattern="[A-Za-z0-9]{3,}" title="請至少填入3位英文或數字"
+                        required>
+                </div>
+                <div class="joinmember">
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="joinmember">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="joinmember">
+                    <button type="submit">送出</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 擬態窗口 會員登入 -->
+    <div id="myModallogin" class="modallogin">
+        <div class="modallogin-content">
+            <span class="closelogin" id="closeModalloginBtn">&times;</span>
+            <h2>會員登入</h2>
+            <form>
+                <div class="loginmember">
+                    <label for="name">帳號:</label>
+                    <input type="text" id="account" name="account" pattern="[A-Za-z0-9]{8,}" title="至少填入8位英文或數字"
+                        required>
+                </div>
+                <div class="loginmember">
+                    <label for="name">密碼:</label>
+                    <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{3,}" title="請至少填入3位英文或數字"
+                        required>
+                </div>
+                <div class="loginmember">
+                    <button type="submit">送出</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -83,6 +187,9 @@
 
     </div>
 
+    <!-- 會員功能JS帶入 -->
+    <script src="./js/joinmember.js"> </script>
+    <script src="./js/loginmember.js"></script>
 
 </body>
 

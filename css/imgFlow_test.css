@@ -4,30 +4,25 @@
     max-width: 100%;
     height: auto;
     position:relative;
-    /* display: block;
-    margin: 0 auto; */
+
    
 }
 
 .coverflow a {
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%); */
     opacity: 0;
     filter: alpha(opacity=0);
     /*當圖片數量增加，影片長度需更改，變為5s*圖片數量 */
     -webkit-animation: silder 15s linear infinite;
     animation: silder 15s linear infinite;
 }
-/* .coverflow a img{
-    display: block;
-    margin: 0 auto;
-} */
+
 .coverflow>a>img {
     max-width: 100%;
-    /* display: block;
-    margin: 0 auto; */
 } 
 
 /*動畫關鍵影格*/

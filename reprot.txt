@@ -6,6 +6,8 @@ https://wenku.csdn.net/answer/17zf3ebq5p?ydreferer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvb
 
 CSS>10>70 聯絡我們的參考
 
+回家再看看主頁輪播的置中效果&聯絡我們的表單寬度調整
+
 
 購物車
 https://codepen.io/floraya/pen/PoXXGoG 購物車(還沒做)

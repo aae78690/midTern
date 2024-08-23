@@ -7,8 +7,14 @@
     <title>樂玩 TheOne:各式盒玩周邊</title>
     <link rel="stylesheet" href="./css/bottomList.css">
     <link rel="stylesheet" href="./css/navBar.css">
-    <link rel="stylesheet" href="./css/imgFlow_test.css">
     <link rel="stylesheet" href="./css/logo.css">
+    <link rel="stylesheet" href="./css/joinmember.css">
+    <link rel="stylesheet" href="./css/loginmember.css">
+
+    <link rel="stylesheet" href="./css/contactus.css">
+
+
+    <!-- <link rel="stylesheet" href="./css/imgFlow_test.css"> -->
 
     <!-- 不要的 -->
     <!-- <link rel="stylesheet" href="./css/imgFlow_test2.css"> -->
@@ -21,14 +27,15 @@
     <div class="LOGO">
         <div class="rightupbox">
             <a href="">購物車</a>
-            <a href="">會員登入</a>
-            <a href="">加入會員</a>
+            <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
+            <button class="open-modal-btn" id="openModalBtn">加入會員</button>
         </div>
         <a href="./myHome.html"><img src="./img/logo/logo(100).png" class="Lo"></a>
 
         <!-- 頁首索引 -->
         <nav class="header">
             <ul class="navBar">
+                <li><a href="./myHome.html">首頁</a></li>
                 <li><a href="./newstore.html">最新優惠</a></li>
                 <li><a href="./allToy.html">所有商品</a></li>
                 <li><a href="./contactus.html">聯絡我們</a></li>
@@ -37,24 +44,95 @@
     </div>
 
     <!-- 頁面資訊 -->
-    <h1>聯絡我們</h1>
-    <hr>
+    <div class="outwindow">
+        <!-- 意見回饋 -->
+        <div class="form-container">
+            <h2>聯絡我們</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">如何稱呼您：</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email：</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="feedback">建議及問題回饋：</label>
+                    <input type="text" id="feedback" name="feedback" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">送出</button>
+                </div>
+            </form>
+        </div>
+        <!-- 聯絡資訊 -->
+        <div class="contactinfo">
+            <h2>聯絡資訊</h2>
+            <ul>
+                <li>TheOne 樂玩有限公司</li>
+                <li>統編：12345678</li>
+                <li>客服電話：04-5555-8888</li>
+                <li>週一至週五 AM9:00~PM6:00</li>
+                <li>地址：408台中市南屯區公益路二段51號18樓</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 擬態窗口 加入會員-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>加入會員</h2>
+            <form>
+                <div class="joinmember">
+                    <label for="name">帳號:</label>
+                    <input type="text" id="account" name="account" pattern="[A-Za-z0-9]{8,}" title="至少填入8位英文或數字"
+                        required>
+                </div>
+                <div class="joinmember">
+                    <label for="name">密碼:</label>
+                    <input type="text" id="password" name="password" pattern="[A-Za-z0-9]{3,}" title="請至少填入3位英文或數字"
+                        required>
+                </div>
+                <div class="joinmember">
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="joinmember">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="joinmember">
+                    <button type="submit">送出</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
-    <label for="buyerName">您如何稱呼：</label>
-    <input id="buyerName" type="text">
+    <!-- 擬態窗口 會員登入 -->
+    <div id="myModallogin" class="modallogin">
+        <div class="modallogin-content">
+            <span class="closelogin" id="closeModalloginBtn">&times;</span>
+            <h2>會員登入</h2>
+            <form>
+                <div class="loginmember">
+                    <label for="name">帳號:</label>
+                    <input type="text" id="account" name="account" pattern="[A-Za-z0-9]{8,}" title="至少填入8位英文或數字"
+                        required>
+                </div>
+                <div class="loginmember">
+                    <label for="name">密碼:</label>
+                    <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{3,}" title="請至少填入3位英文或數字"
+                        required>
+                </div>
+                <div class="loginmember">
+                    <button type="submit">送出</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <br>
-    <label for="buyerEmail">您的電子信箱：</label>
-    <input id="buyerEmail" type="email">
-    <br>
-    <label for="buyerMsg">您想告訴我們的建議及問題</label>
-    <input id="buyerMsg" type="text">
-
-
-
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-
     <!-- 底部資訊 -->
     <hr>
     <div id="bottomList" style="display: flex;">
@@ -94,7 +172,9 @@
         </div>
 
     </div>
-
+    <!-- 會員功能JS帶入 -->
+    <script src="./js/joinmember.js"> </script>
+    <script src="./js/loginmember.js"></script>
 
 </body>
 
