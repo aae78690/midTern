@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>樂玩 TheOne:各式盒玩周邊</title>
-    <link rel="icon" href="./img/logo/icon.png">
     <link rel="stylesheet" href="./css/bottomList.css">
     <link rel="stylesheet" href="./css/navBar.css">
     <link rel="stylesheet" href="./css/logo.css">
     <link rel="stylesheet" href="./css/joinmember.css">
     <link rel="stylesheet" href="./css/loginmember.css">
 
-    <link rel="stylesheet" href="./css/contactus.css">
-
-
-    <!-- <link rel="stylesheet" href="./css/imgFlow_test.css"> -->
+    <link rel="stylesheet" href="./css/imgFlow_test.css">
+    <link rel="stylesheet" href="./css/newstore.css">
 
     <!-- 不要的 -->
     <!-- <link rel="stylesheet" href="./css/imgFlow_test2.css"> -->
+
+    <style>
+
+    </style>
 
 </head>
 
 <body>
 
-
-    <!-- LOGO -->
+    <!-- 頁首 -->
     <div class="LOGO">
         <div class="topArea">
             <!-- LOGO -->
@@ -49,41 +49,41 @@
     </div>
 
     <!-- 頁面資訊 -->
-    <br><br><br>
-    <div class="outwindow">
-        <!-- 意見回饋 -->
-        <div class="form-container">
-            <h2>聯絡我們</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">如何稱呼您：</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email：</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="feedback">建議及問題回饋：</label>
-                    <input type="text" id="feedback" name="feedback" required>
-                </div>
-                <div class="form-group">
-                    <button type="submit" onclick="submitForm(event);">送出</button>
-                </div>
-            </form>
+
+    <!-- 新品上架 -->
+    <h1 style="text-align: center;">新品上架</h1>
+    <div class="demo2">
+        <div class="cover2">
+            <a href="#">
+                <img src="./img/newstore/dog(1296x).png">
+            </a>
+            <a href="#">
+                <img src="./img/newstore/chii_ad1296x.png">
+            </a>
+            <a href="#">
+                <img src="./img/newstore/chii1296x.png">
+            </a>
+
         </div>
-        <!-- 聯絡資訊 -->
-        <div class="contactinfo">
-            <h2>聯絡資訊</h2>
-            <ul>
-                <li>TheOne 樂玩有限公司</li>
-                <li>統編：12345678</li>
-                <li>客服電話：04-5555-8888</li>
-                <li>週一至週五 AM9:00~PM6:00</li>
-                <li>地址：408台中市南屯區公益路二段51號18樓</li>
-            </ul>
+
+    </div>
+
+    <!-- 最新優惠  測試中-->
+    <h1 id="discount" style="text-align: center;">最新優惠</h1>
+    <div class="demo">
+        <div id="cover" class="coverflow">
+            <a href="#">
+                <img src="./img/ad/loginget50(1296x).png">
+            </a>
+            <a href="#">
+                <img src="./img/ad/saleoff72(1296x).png">
+            </a>
+            <a href="#">
+                <img src="./img/ad/up680nofee(1296x).png">
+            </a>
         </div>
     </div>
+
     <!-- 擬態窗口 加入會員-->
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -138,7 +138,11 @@
         </div>
     </div>
 
-    <br><br><br><br><br><br><br>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
     <!-- 底部資訊 -->
     <hr>
     <div id="bottomList" style="display: flex;">
@@ -181,8 +185,7 @@
     <!-- 會員功能JS帶入 -->
     <script src="./js/joinmember.js"> </script>
     <script src="./js/loginmember.js"></script>
-    <!-- 送出按鈕 -->
-     <script src="./js/connactbutton.js"></script>
+
 </body>
 
 </html>

@@ -1,34 +1,71 @@
-.toyBox{
-    width:250px; /*<div>一定要先設定寬度之後才能使用 float 做水平排列 */ 
- 
-    float:left; /*使用 float 做水平排列 */
-    background-color:#eeee83c7; 
-    margin-left:12px; /* 設定欄位的左邊外間距 */ 
-    margin-top: 100px;
+h1 {
+    text-align: center;
+    color: coral;
+    font-size: 28px;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    /* 允許元素換行 */
+    justify-content: start;
+    /* 讓項目均勻分布在容器中 */
+}
+
+.toyBox {
+    display: none;
+    width: 300px;
+    overflow: hidden;
+    /* background-color:#eeee83c7;  */
+    margin: 12px;
 }
 
 .toyimg {
-    background-color: aqua;
-    width: 250px;
-    height: 250px;
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
 }
 
 .toyimg img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: auto;
     object-fit: contain;
 }
-.toyname{
-    background-color: chartreuse;
-    width: 250px;
+
+.toyname {
+    /* background-color: chartreuse; */
+    width: 300px;
     text-align: center;
+    font-size: 18px;
 }
-.toyprice{
-    background-color: darksalmon;
+
+.toyprice {
+    /* background-color: darksalmon; */
     text-align: center;
-    width: 250px;
+    width: 300px;
+    font-size: 18px;
 }
-/* 清除左右浮動(float) */
-.floatclean{
-    clear: both;
+
+/* 分類功能按鈕 */
+.button-container {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.button-container button {
+    background-color: rgb(255, 248, 251);
+    border: 2px dotted pink;
+    color: rgb(165, 64, 27);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button-container button:hover{
+    background-color:rgb(255, 240, 243) ;
+
+}
+.show {
+    display: block;
+    /* 顯示選中的商品 */
 }

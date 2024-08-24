@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>樂玩 TheOne:各式盒玩周邊</title>
+    <link rel="icon" href="./img/logo/icon.png">
     <link rel="stylesheet" href="./css/navBar.css">
     <link rel="stylesheet" href="./css/bottomList.css">
     <link rel="stylesheet" href="./css/logo.css">
@@ -30,13 +31,16 @@
 
     <!-- LOGO -->
     <div class="LOGO">
-        <div class="rightupbox">
-            <a href="">購物車</a>
-            <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
-            <button class="open-modal-btn" id="openModalBtn">加入會員</button>
+        <div class="topArea">
+            <!-- LOGO -->
+            <a href="#"><img src="./img/logo/logo(100).png" class="Lo"></a>
+            <!-- 會員功能 -->
+            <div class="rightupbox">
+                <a href="">購物車</a>
+                <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
+                <button class="open-modal-btn" id="openModalBtn">加入會員</button>
+            </div>
         </div>
-        <a href="./myHome.html"><img src="./img/logo/logo(100).png" class="Lo"></a>
-
         <!-- 頁首索引 -->
         <nav class="header">
             <ul class="navBar">
@@ -49,50 +53,151 @@
     </div>
 
     <!-- 商品頁面 -->
+    <h1>所有商品</h1>
+    <div class="button-container">
+        <button onclick="filterProducts('all')">顯示全部</button>
+        <button onclick="filterProducts('category-lt')">懶散兔</button>
+        <button onclick="filterProducts('category-ld')">線條小狗</button>
+        <button onclick="filterProducts('category-kn')">卡娜赫拉的小動物</button>
+        <button onclick="filterProducts('category-mj')">ㄇㄚˊ幾兔</button>
+        <button onclick="filterProducts('category-jl')">角落小夥伴</button>
+        <button onclick="filterProducts('category-ch')">吉伊卡哇</button>
+        
+    </div>
+    <br>
+    <!-- <hr style="border: 0.5px ridge lightgray;"> -->
     <section>
-        <h2>所有商品</h2>
-        <div class="toyBox">
+
+        <div class="toyBox category-lt">
             <div class="toyimg"><a href="./storehtml/toy_chu_chi.html"><img src="./img/store/chu_chi800x.png"></a></div>
             <div class="toyname">懶散兔與啾先生招財公仔 [啾先生]</div>
             <div class="toyprice">$490</div>
-            <!-- <div>
-                <label for="buyNum">購買數量</label>
-                <button onclick="numMinus()">-</button>
-                <input id="buyNum" type="text" value="1" required minlength="1" maxlength="49" size="1" >
-                <button onclick="numPlus()">+</button>
-                <input type="button" value="加入購物車">
-            </div> -->
         </div>
-        <div class="toyBox">
-            <div class="toyimg"><img src="./img/store/chu_rabbit800x.png"></div>
+        <div class="toyBox category-lt">
+            <div class="toyimg"><a href=""><img src="./img/store/chu_rabbit800x.png"></a></div>
             <div class="toyname">懶散兔與啾先生招財公仔 [懶散兔]</div>
             <div class="toyprice">$490</div>
         </div>
-        <div class="toyBox">
-            <div class="toyimg"><img src="./img/store/dog800x.png"></div>
+        <div class="toyBox category-ld">
+            <div class="toyimg"><a href=""><img src="./img/store/dog800x.png"></a></div>
             <div class="toyname">線條小狗 - 我倆是世界第一要好 [單盒]</div>
             <div class="toyprice">$300</div>
         </div>
-        <div class="toyBox">
-            <div class="toyimg"><img src="./img/store/hat(kana)800x.png"></div>
+        <div class="toyBox category-kn">
+            <div class="toyimg"><a href=""><img src="./img/store/hat(kana)800x.png"></a></div>
             <div class="toyname">卡娜赫拉的小動物帽子收藏家PRO [單盒]</div>
             <div class="toyprice">$250</div>
         </div>
-        <div class="toyBox">
-            <div class="toyimg"><img src="./img/store/maji800x.png"></div>
+        <div class="toyBox category-mj">
+            <div class="toyimg"><a href=""><img src="./img/store/maji800x.png"></a></div>
             <div class="toyname">ㄇㄚˊ幾兔招財公仔</div>
             <div class="toyprice">$490</div>
         </div>
-        <div class="toyBox">
-            <div class="toyimg"><img src="./img/store/mini800x.png"></div>
+        <div class="toyBox category-jl">
+            <div class="toyimg"><a href=""><img src="./img/store/mini800x.png"></a></div>
             <div class="toyname">角落小夥伴的森林探險 [單盒]</div>
             <div class="toyprice">$169</div>
         </div>
-        <div class="toyBox">
-            <div class="toyimg"><img src="./img/store/pinkrabbit(kana)800x.png"></div>
+        <div class="toyBox category-kn">
+            <div class="toyimg"><a href=""><img src="./img/store/pinkrabbit(kana)800x.png"></a></div>
             <div class="toyname">卡娜赫拉的小動物祈願達摩 [單盒]</div>
             <div class="toyprice">$250</div>
         </div>
+        <div class="toyBox category-ld">
+            <div class="toyimg"><a href=""><img src="./img/store/doll/dog1 800x.png"></a></div>
+            <div class="toyname">線條小狗絨毛娃娃(睡衣款)</div>
+            <div class="toyprice">$395</div>
+        </div>
+        <div class="toyBox category-ld">
+            <div class="toyimg"><a href=""><img src="./img/store/doll/dog2 800x.png"></a></div>
+            <div class="toyname">線條小狗絨毛娃娃(斗篷款)</div>
+            <div class="toyprice">$395</div>
+        </div>
+        <div class="toyBox category-ld">
+            <div class="toyimg"><a href=""><img src="./img/store/doll/dog3 800x.png"></a></div>
+            <div class="toyname">線條小狗絨毛娃娃(圍裙款)</div>
+            <div class="toyprice">$395</div>
+        </div>
+        
+        <div class="toyBox category-kn">
+            <div class="toyimg"><a href=""><img src="./img/store/doll/pseki(kana)800x.png"></a></div>
+            <div class="toyname">卡娜赫拉的小動物 頭型抱枕(P助)</div>
+            <div class="toyprice">$221</div>
+        </div>
+        <div class="toyBox category-kn">
+            <div class="toyimg"><a href=""><img src="./img/store/doll/rabbit(kana)800x.png"></a></div>
+            <div class="toyname">卡娜赫拉的小動物 頭型抱枕(兔兔)</div>
+            <div class="toyprice">$221</div>
+        </div>
+        <div class="toyBox category-jl">
+            <div class="toyimg"><a href=""><img src="./img/store/doll/small800x.png"></a></div>
+            <div class="toyname">18吋角落小夥伴花園 玩偶 [炸蝦尾]</div>
+            <div class="toyprice">$480</div>
+        </div>
+        <div class="toyBox category-ch">
+            <div class="toyimg"><a href=""><img src="./img/store/smalladd/ba800x.png"></a></div>
+            <div class="toyname">吉伊卡哇皮革吊飾(小八)</div>
+            <div class="toyprice">$200</div>
+        </div>
+        <div class="toyBox category-ch">
+            <div class="toyimg"><a href=""><img src="./img/store/smalladd/chiikawa800x.png"></a></div>
+            <div class="toyname">吉伊卡哇皮革吊飾(吉伊)</div>
+            <div class="toyprice">$200</div>
+        </div>
+        <div class="toyBox category-ch">
+            <div class="toyimg"><a href=""><img src="./img/store/smalladd/usagi800x.png"></a></div>
+            <div class="toyname">吉伊卡哇皮革吊飾(兔兔)</div>
+            <div class="toyprice">$200</div>
+        </div>
+        <div class="toyBox category-ch">
+            <div class="toyimg"><a href=""><img src="./img/store/smalladd/chii800x.png"></a></div>
+            <div class="toyname">吉伊卡哇手機掛繩及掛片 (情人節)</div>
+            <div class="toyprice">$390</div>
+        </div>
+        <div class="toyBox category-lr">
+            <div class="toyimg"><a href=""><img src="./img/store/smalladd/chuchi800x.png"></a></div>
+            <div class="toyname">懶散兔與啾先生束口袋(啾先生)</div>
+            <div class="toyprice">$350</div>
+        </div>
+        <div class="toyBox category-lr">
+            <div class="toyimg"><a href=""><img src="./img/store/smalladd/churabbitbag800x.png"></a></div>
+            <div class="toyname">懶散兔與啾先生束口袋(懶散兔)</div>
+            <div class="toyprice">$350</div>
+        </div>
+        <div class="toyBox category-kn">
+            <div class="toyimg"><a href=""><img src="./img/store/smalladd/kanabag800x.png"></a></div>
+            <div class="toyname">卡娜赫拉的小動物-畫家托特包</div>
+            <div class="toyprice">$590</div>
+        </div>
+        <div class="toyBox category-kn">
+            <div class="toyimg"><a href=""><img src="./img/store/smalladd/kanasmallbag800x.png"></a></div>
+            <div class="toyname">卡娜赫拉的小動物 斜紋皮革錢包</div>
+            <div class="toyprice">$170</div>
+        </div>
+        <div class="toyBox category-mj">
+            <div class="toyimg"><a href=""><img src="./img/store/smalladd/maji800x.png"></a></div>
+            <div class="toyname">ㄇㄚˊ幾兔皮革吊飾</div>
+            <div class="toyprice">$230</div>
+        </div>
+        <div class="toyBox category-mj">
+            <div class="toyimg"><a href=""><img src="./img/store/smalladd/majibag800x.png"></a></div>
+            <div class="toyname">ㄇㄚˊ幾兔 綠植生活購物袋</div>
+            <div class="toyprice">$450</div>
+        </div>
+        <div class="toyBox category-kn">
+            <div class="toyimg"><a href=""><img src="./img/store/smalladd/pski800x.png"></a></div>
+            <div class="toyname">卡娜赫拉的小動物皮革吊飾(P助)</div>
+            <div class="toyprice">$180</div>
+        </div>
+        <div class="toyBox category-kn">
+            <div class="toyimg"><a href=""><img src="./img/store/smalladd/rabbit(kana)800x.png"></a></div>
+            <div class="toyname">卡娜赫拉的小動物皮革吊飾(兔兔)</div>
+            <div class="toyprice">$180</div>
+        </div>
+
+
+
+
         <!-- 商品陳列結束要放下列這個以免底下設計的版面跑掉(清除float) -->
         <div class="floatclean"></div>
 
@@ -204,14 +309,31 @@
 
     </div>
 
-    <!-- 購物車Function 代入-->
-    <script src="./js/buttom.js">
-
-    </script>
     <!-- 會員功能JS帶入 -->
     <script src="./js/joinmember.js"> </script>
     <script src="./js/loginmember.js"></script>
+    <!-- 顯示商品功能 -->
+    <script>
 
+        function filterProducts(category) {
+            const products = document.querySelectorAll('.toyBox');
+
+            products.forEach(product => {
+                if (category === 'all') {
+                    product.classList.add('show');
+                } else {
+                    if (product.classList.contains(category)) {
+                        product.classList.add('show');
+                    } else {
+                        product.classList.remove('show');
+                    }
+                }
+            });
+        }
+
+        // 初始顯示全部商品
+        filterProducts('all');
+    </script>
 </body>
 
 </html>

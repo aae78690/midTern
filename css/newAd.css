@@ -3,15 +3,18 @@
     height: auto;
     position: relative;
 }
-
-.newAd img {
-    display: block;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
+.newAditem{
+    background-color: rgb(255, 234, 214);
+    border-left: 10px solid rgb(247, 204, 66);
+    border-bottom: 5px dotted rgba(145, 83, 11, 0.966);
     border-radius: 20px;
 }
-.newAditem{
-    border: 1px solid gray;
+.newAditem img {
+    display: block;
+    max-width: 100%;
+    margin: 0px auto;
     border-radius: 20px;
+}
+.newAditem li{
+    font-size: 18px;
 }

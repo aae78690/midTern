@@ -3,6 +3,9 @@ https://www.designevo.com/tw/apps/logo/?name=pastel-rabbit  設計LOGO
 https://web4theme.com/article/html%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E7%AF%84%E4%BE%8B-%E5%B7%A6%E5%9C%96%E5%8F%B3%E5%AD%97.html
 按鈕加減
 https://wenku.csdn.net/answer/17zf3ebq5p?ydreferer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8%3D
+判斷EMAIL格式
+https://ithelp.ithome.com.tw/articles/10094951
+
 
 CSS>10>70 聯絡我們的參考
 

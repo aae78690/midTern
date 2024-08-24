@@ -1,9 +1,19 @@
+h1{
+    text-align: center;
+    color: coral;
+}
+
+body{
+    font-family: Arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
+    background-color: rgb(255, 250, 242);
+}
 /* 頁面索引樣式 */
 .navBar {
     list-style-type: none;
     text-align: center;
     background-color: #ebb00f;
     position: relative;
+    margin: 0;
 }
 
 /* navBar裡面的所有li */
@@ -14,7 +24,7 @@
 
 /* narBar 裡面的 li 項目被鼠標碰到時(hover)呈現的樣式 */
 .navBar li:hover {
-    background-color: #dbbc56;
+    background-color: #f3c93e;
 }
 
 /* 1.文字顏色 2.置中 3.取消超連結底線 */
@@ -23,7 +33,6 @@
     text-align: center;
     text-decoration: none;
     font-size:larger;
-    
 }
 /* 永遠置頂 */
 /* .header {

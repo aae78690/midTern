@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖片輪播</title>
+    <style>
+        .carousel-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+<!-- 頁首 -->
+<div class="LOGO">
+    <div class="topArea">
+        <!-- LOGO -->
+        <a href="#"><img src="./img/logo/logo(100).png" class="Lo"></a>
+        <!-- 會員功能 -->
+        <div class="rightupbox">
+            <a href="">購物車</a>
+            <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
+            <button class="open-modal-btn" id="openModalBtn">加入會員</button>
+        </div>
+    </div>
+    <!-- 頁首索引 -->
+    <nav class="header">
+        <ul class="navBar">
+            <li><a href="./myHome.html">首頁</a></li>
+            <li><a href="./newstore.html">最新優惠</a></li>
+            <li><a href="./allToy.html">所有商品</a></li>
+            <li><a href="./contactus.html">聯絡我們</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- 頁面資訊 -->
+
+<!-- 新品上架 -->
+<h1 style="text-align: center;">新品上架</h1>
+<div class="demo2">
+    <div class="cover2">
+        <a href="#">
+            <img src="./img/newstore/dog(1296x).png">
+        </a>
+        <a href="#">
+            <img src="./img/newstore/chii_ad1296x.png">
+        </a>
+        <a href="#">
+            <img src="./img/newstore/chii1296x.png">
+        </a>
+
+    </div>
+
+</div>
+
+<div class="carousel-container" id="carousel">
+    <div class="carousel-images">
+        <img src="./img/ad/loginget50(1296x).png" alt="Image 1">
+        <img src="./img/ad/saleoff72(1296x).png" alt="Image 2">
+        <img src="./img/ad/up680nofee(1296x).png" alt="Image 3">
+    </div>
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+</div>
+
+<script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel-images img');
+    const totalImages = images.length;
+    let autoSlide = setInterval(nextSlide, 3000); // 每3秒自動切換圖片
+
+    function showSlide(index) {
+        currentIndex = index;
+        if (currentIndex >= totalImages) {
+            currentIndex = 0;
+        } else if (currentIndex < 0) {
+            currentIndex = totalImages - 1;
+        }
+        const newTransformValue = `translateX(-${currentIndex * 100}%)`;
+        document.querySelector('.carousel-images').style.transform = newTransformValue;
+    }
+
+    function nextSlide() {
+        showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+        showSlide(currentIndex - 1);
+    }
+
+    // 當滑鼠移入圖片時停止自動切換
+    document.getElementById('carousel').addEventListener('mouseover', () => {
+        clearInterval(autoSlide);
+    });
+
+    // 當滑鼠移出圖片時恢復自動切換
+    document.getElementById('carousel').addEventListener('mouseout', () => {
+        autoSlide = setInterval(nextSlide, 3000);
+    });
+
+    // 讓圖片大小隨視窗大小縮放
+    window.addEventListener('resize', () => {
+        showSlide(currentIndex);
+    });
+</script>
+
+</body>
+</html>

@@ -3,7 +3,6 @@
 .coverflow {
     display: grid;
     place-items: center;
-   
 }
 
 .coverflow a {
@@ -15,10 +14,6 @@
     /*當圖片數量增加，影片長度需更改，變為5s*圖片數量 */
     -webkit-animation: silder 15s linear infinite;
     animation: silder 15s linear infinite;
-}
-.coverflow a img{
-    /* display: block;
-    margin: 0 auto; */
 }
 .coverflow>a>img {
     max-width: 100%;

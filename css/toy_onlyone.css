@@ -1,10 +1,11 @@
-
- /* 包住上方畫面的外框 */
+/* 包住上方畫面的外框 */
 .upinfo {
     /* width: 800px; */
     margin: auto;
-    border: solid 1px gray;
+    border: dotted 5px rgb(252, 230, 216);
+    border-radius: 5px;
     overflow: hidden;
+    background-color: rgb(255, 252, 238);
 }
 
 /* 包住圖片的外框 */
@@ -16,6 +17,7 @@
     /* padding: 20px; */
     /* height: 500px; */
 }
+
 /* 圖片本身 */
 .toyimg img {
     display: block;
@@ -27,32 +29,56 @@
 /* 商品說明 */
 .detailinfo {
     float: left;
-    margin:0px 0px 0px 50px;
+    margin: 0px 0px 0px 50px;
     width: 430px;
     padding: 20px 20px 0px 0px;
 
 }
 
-.toyname {
-    background-color: chartreuse;
-    text-align: center;
-    width: 250px;
+.detailinfo p {
+    font-size: 18px;
 }
 
 .toyprice {
-    background-color: darksalmon;
-    text-align: center;
+    /* background-color: darksalmon; */
+    /* text-align: center; */
+    font-size: 18px;
     width: 250px;
 }
+
+.buyNum {
+    font-size: 18px;
+}
+
+.buyNum button {
+    background-color: rgb(223, 205, 199);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.buyNum input {
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
 /* 下方商品規格 */
 .bottominfo {
-    margin: 20px 0px 0px 0px;
-    border: solid 1px gray;
+    margin: 10px 0px 0px 0px;
+    border: dotted 5px rgb(252, 230, 216);
     overflow: hidden;
+    background-color: rgb(255, 252, 238);
+    border-radius: 8px;
 }
-.bottominfo h2{
+
+.bottominfo h2 {
     text-align: center;
 }
-.bottominfo p{
+
+.bottominfo p {
     margin: 0px 0px 0px 10px;
+    font-size: 18px;
 }

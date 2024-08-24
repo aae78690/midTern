@@ -5,38 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>樂玩 TheOne:各式盒玩周邊</title>
-    <link rel="icon" href="./img/logo/icon.png">
-    <link rel="stylesheet" href="./css/bottomList.css">
     <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="stylesheet" href="./css/bottomList.css">
     <link rel="stylesheet" href="./css/logo.css">
     <link rel="stylesheet" href="./css/joinmember.css">
     <link rel="stylesheet" href="./css/loginmember.css">
 
-    <link rel="stylesheet" href="./css/contactus.css">
+    <link rel="stylesheet" href="./css/toy.css">
 
 
+    <!-- 先停用還要測試 -->
     <!-- <link rel="stylesheet" href="./css/imgFlow_test.css"> -->
 
     <!-- 不要的 -->
     <!-- <link rel="stylesheet" href="./css/imgFlow_test2.css"> -->
 
+    <style>
+
+    </style>
+
 </head>
 
 <body>
 
-
     <!-- LOGO -->
     <div class="LOGO">
-        <div class="topArea">
-            <!-- LOGO -->
-            <a href="#"><img src="./img/logo/logo(100).png" class="Lo"></a>
-            <!-- 會員功能 -->
-            <div class="rightupbox">
-                <a href="">購物車</a>
-                <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
-                <button class="open-modal-btn" id="openModalBtn">加入會員</button>
-            </div>
+        <div class="rightupbox">
+            <a href="">購物車</a>
+            <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
+            <button class="open-modal-btn" id="openModalBtn">加入會員</button>
         </div>
+        <a href="./myHome.html"><img src="./img/logo/logo(100).png" class="Lo"></a>
+
         <!-- 頁首索引 -->
         <nav class="header">
             <ul class="navBar">
@@ -48,41 +48,66 @@
         </nav>
     </div>
 
-    <!-- 頁面資訊 -->
-    <br><br><br>
-    <div class="outwindow">
-        <!-- 意見回饋 -->
-        <div class="form-container">
-            <h2>聯絡我們</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">如何稱呼您：</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email：</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="feedback">建議及問題回饋：</label>
-                    <input type="text" id="feedback" name="feedback" required>
-                </div>
-                <div class="form-group">
-                    <button type="submit" onclick="submitForm(event);">送出</button>
-                </div>
-            </form>
+    <!-- 商品頁面 -->
+    <section>
+        <h2>所有商品</h2>
+        <div class="toyBox">
+            <div class="toyimg"><a href="./storehtml/toy_chu_chi.html"><img src="./img/store/chu_chi800x.png"></a></div>
+            <div class="toyname">懶散兔與啾先生招財公仔 [啾先生]</div>
+            <div class="toyprice">$490</div>
+            <!-- <div>
+                <label for="buyNum">購買數量</label>
+                <button onclick="numMinus()">-</button>
+                <input id="buyNum" type="text" value="1" required minlength="1" maxlength="49" size="1" >
+                <button onclick="numPlus()">+</button>
+                <input type="button" value="加入購物車">
+            </div> -->
         </div>
-        <!-- 聯絡資訊 -->
-        <div class="contactinfo">
-            <h2>聯絡資訊</h2>
-            <ul>
-                <li>TheOne 樂玩有限公司</li>
-                <li>統編：12345678</li>
-                <li>客服電話：04-5555-8888</li>
-                <li>週一至週五 AM9:00~PM6:00</li>
-                <li>地址：408台中市南屯區公益路二段51號18樓</li>
-            </ul>
+        <div class="toyBox">
+            <div class="toyimg"><img src="./img/store/chu_rabbit800x.png"></div>
+            <div class="toyname">懶散兔與啾先生招財公仔 [懶散兔]</div>
+            <div class="toyprice">$490</div>
         </div>
+        <div class="toyBox">
+            <div class="toyimg"><img src="./img/store/dog800x.png"></div>
+            <div class="toyname">線條小狗 - 我倆是世界第一要好 [單盒]</div>
+            <div class="toyprice">$300</div>
+        </div>
+        <div class="toyBox">
+            <div class="toyimg"><img src="./img/store/hat(kana)800x.png"></div>
+            <div class="toyname">卡娜赫拉的小動物帽子收藏家PRO [單盒]</div>
+            <div class="toyprice">$250</div>
+        </div>
+        <div class="toyBox">
+            <div class="toyimg"><img src="./img/store/maji800x.png"></div>
+            <div class="toyname">ㄇㄚˊ幾兔招財公仔</div>
+            <div class="toyprice">$490</div>
+        </div>
+        <div class="toyBox">
+            <div class="toyimg"><img src="./img/store/mini800x.png"></div>
+            <div class="toyname">角落小夥伴的森林探險 [單盒]</div>
+            <div class="toyprice">$169</div>
+        </div>
+        <div class="toyBox">
+            <div class="toyimg"><img src="./img/store/pinkrabbit(kana)800x.png"></div>
+            <div class="toyname">卡娜赫拉的小動物祈願達摩 [單盒]</div>
+            <div class="toyprice">$250</div>
+        </div>
+        <!-- 商品陳列結束要放下列這個以免底下設計的版面跑掉(清除float) -->
+        <div class="floatclean"></div>
+
+
+
+
+
+    </section>
+
+
+
+    <!-- 購物車圖 -->
+    <div>
+
+
     </div>
     <!-- 擬態窗口 加入會員-->
     <div id="myModal" class="modal">
@@ -137,8 +162,8 @@
             </form>
         </div>
     </div>
-
-    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <!-- 底部資訊 -->
     <hr>
     <div id="bottomList" style="display: flex;">
@@ -178,11 +203,15 @@
         </div>
 
     </div>
+
+    <!-- 購物車Function 代入-->
+    <script src="./js/buttom.js">
+
+    </script>
     <!-- 會員功能JS帶入 -->
     <script src="./js/joinmember.js"> </script>
     <script src="./js/loginmember.js"></script>
-    <!-- 送出按鈕 -->
-     <script src="./js/connactbutton.js"></script>
+
 </body>
 
 </html>

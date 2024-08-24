@@ -12,7 +12,13 @@
     z-index: 1;
 }
 
+.topArea {
+    display: flex;
+    justify-content:space-between;
+}
+
 .Lo {
+    margin: 0;
     height: auto;
     max-width: 100%;
 }
@@ -21,7 +27,8 @@
     text-align: right;
 }
 
-.rightupbox a,.rightupbox button {
+.rightupbox a,
+.rightupbox button {
 
     text-decoration: none;
     letter-spacing: 3px;
