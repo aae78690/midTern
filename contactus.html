@@ -11,14 +11,10 @@
     <link rel="stylesheet" href="./css/logo.css">
     <link rel="stylesheet" href="./css/joinmember.css">
     <link rel="stylesheet" href="./css/loginmember.css">
+    <link rel="stylesheet" href="./css/Yiancart.css">
 
     <link rel="stylesheet" href="./css/contactus.css">
 
-
-    <!-- <link rel="stylesheet" href="./css/imgFlow_test.css"> -->
-
-    <!-- 不要的 -->
-    <!-- <link rel="stylesheet" href="./css/imgFlow_test2.css"> -->
 
 </head>
 
@@ -32,7 +28,7 @@
             <a href="#"><img src="./img/logo/logo(100).png" class="Lo"></a>
             <!-- 會員功能 -->
             <div class="rightupbox">
-                <a href="">購物車</a>
+                <button class="openYiancart-btn" id="openYiancartBtn"></button>
                 <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
                 <button class="open-modal-btn" id="openModalBtn">加入會員</button>
             </div>
@@ -65,7 +61,8 @@
                 </div>
                 <div class="form-group">
                     <label for="feedback">建議及問題回饋：</label>
-                    <input type="text" id="feedback" name="feedback" required>
+                    <!-- <input type="text" id="feedback" name="feedback" required> -->
+                     <textarea name="feedback" id="feedback" style="resize: none;" required></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit" onclick="submitForm(event);">送出</button>
@@ -82,6 +79,11 @@
                 <li>週一至週五 AM9:00~PM6:00</li>
                 <li>地址：408台中市南屯區公益路二段51號18樓</li>
             </ul>
+            <div class="othercontact">
+                <a href="https://www.facebook.com/YENDAR2005" target="_blank"><img src="./img/logo/social_facebook.png"></a>
+                <a href="https://www.instagram.com/yendar_2005/" target="_blank"><img src="./img/logo/social_instagram.png"></a>
+                <a href="https://line.me/ti/p/~@mtg1710h" target="_blank"><img src="./img/logo/social_line.png"></a>
+            </div>
         </div>
     </div>
     <!-- 擬態窗口 加入會員-->
@@ -137,6 +139,16 @@
             </form>
         </div>
     </div>
+    <!--擬態窗口 購物車視窗 -->
+    <div class="myModalcart" id="modalcart">
+        <div class="modalcart-content">
+            <span class="closecart" id="closeModalcartBtn">&times;</span>
+            <h1>購物車</h1>
+            <div id="YiancartItems"></div>
+            <button class="clearCart" onclick="clearCart()">清空購物車</button>
+            <button class="toPay">前往結帳</button>
+        </div>
+    </div>
 
     <br><br><br><br><br><br><br>
     <!-- 底部資訊 -->
@@ -183,6 +195,9 @@
     <script src="./js/loginmember.js"></script>
     <!-- 送出按鈕 -->
      <script src="./js/connactbutton.js"></script>
+      <!-- 加入購物車 -->
+      <script src="./js/Yiancartadd.js"></script>
+      <script src="./js/Yiancartload.js"></script>
 </body>
 
 </html>

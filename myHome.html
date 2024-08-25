@@ -11,12 +11,10 @@
     <link rel="stylesheet" href="./css/logo.css">
     <link rel="stylesheet" href="./css/joinmember.css">
     <link rel="stylesheet" href="./css/loginmember.css">
+    <link rel="stylesheet" href="./css/Yiancart.css">
 
     <link rel="stylesheet" href="./css/imgFlow.css">
     <link rel="stylesheet" href="./css/newstore.css">
-
-    <!-- 不要的 -->
-    <!-- <link rel="stylesheet" href="./css/imgFlow_test2.css"> -->
 
     <style>
 
@@ -33,7 +31,7 @@
             <a href="#"><img src="./img/logo/logo(100).png" class="Lo"></a>
             <!-- 會員功能 -->
             <div class="rightupbox">
-                <a href="">購物車</a>
+                <button class="openYiancart-btn" id="openYiancartBtn"></button>
                 <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
                 <button class="open-modal-btn" id="openModalBtn">加入會員</button>
             </div>
@@ -136,6 +134,16 @@
             </form>
         </div>
     </div>
+    <!--擬態窗口 購物車視窗 -->
+    <div class="myModalcart" id="modalcart">
+        <div class="modalcart-content">
+            <span class="closecart" id="closeModalcartBtn">&times;</span>
+            <h1>購物車</h1>
+            <div id="YiancartItems"></div>
+            <button class="clearCart" onclick="clearCart()">清空購物車</button>
+            <button class="toPay">前往結帳</button>
+        </div>
+    </div>
 
 
     <br><br><br>
@@ -184,6 +192,9 @@
     <script src="./js/loginmember.js"></script>
     <!-- 圖片幻燈片 -->
     <script src="./js/flow.js"></script>
+    <!-- 加入購物車 -->
+    <script src="./js/Yiancartadd.js"></script>
+    <script src="./js/Yiancartload.js"></script>
 
 </body>
 

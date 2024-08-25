@@ -22,17 +22,17 @@ function loadCart() {
     YiancartContainer.innerHTML = ""; // 清空現有內容
 
     if (Yiancart.length === 0) {
-        YiancartContainer.innerText = "購物車是空的";
+        YiancartContainer.innerHTML = "<h3>購物車是空的</h3>";
     } else {
         Yiancart.forEach(function(item, index) {
             var itemElement = document.createElement("div");
             itemElement.innerHTML = `
-                <p>商品名稱: ${item.name}</p>
-                <p>商品價格: ${item.price}</p>
-                <p>購買數量: ${item.quantity}</p>
+                <p>商品名稱： ${item.name}</p>
+                <p> ${item.price}</p>
+                <p>購買數量： ${item.quantity}</p>
                 <img src="${item.image}" alt="商品圖片" width="100"> <!-- 顯示商品圖片 -->
                 <br>
-                <button onclick="removeItem(${index})">刪除</button>
+                <button class="removeItem" onclick="removeItem(${index})">刪除</button>
             `;
             YiancartContainer.appendChild(itemElement);
         });

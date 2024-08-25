@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>樂玩 TheOne:各式盒玩周邊</title>
     <link rel="icon" href="../img/logo/icon.png">
-    <link rel="stylesheet" href="./css/bottomList.css">
-    <link rel="stylesheet" href="./css/navBar.css">
-    <link rel="stylesheet" href="./css/logo.css">
-    <link rel="stylesheet" href="./css/joinmember.css">
-    <link rel="stylesheet" href="./css/loginmember.css">
-    <link rel="stylesheet" href="./css/Yiancart.css">
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/bottomList.css">
+    <link rel="stylesheet" href="../css/logo.css">
+    <link rel="stylesheet" href="../css/joinmember.css">
+    <link rel="stylesheet" href="../css/loginmember.css">
 
-    <link rel="stylesheet" href="./css/newAd.css">
+    <link rel="stylesheet" href="../css/toy_onlyone.css">
 
+    <!-- 先停用還要測試 -->
+    <!-- <link rel="stylesheet" href="./css/imgFlow_test.css"> -->
+
+    <!-- 不要的 -->
+    <!-- <link rel="stylesheet" href="./css/imgFlow_test2.css"> -->
+
+    <style>
+
+    </style>
 
 </head>
 
@@ -23,11 +31,10 @@
     <!-- LOGO -->
     <div class="LOGO">
         <div class="topArea">
-            <!-- LOGO -->
-            <a href="#"><img src="./img/logo/logo(100).png" class="Lo"></a>
-            <!-- 會員功能 -->
+
+            <a href="../myHome.html"><img src="../img/logo/logo(100).png" class="Lo"></a>
             <div class="rightupbox">
-                <button class="openYiancart-btn" id="openYiancartBtn"></button>
+                <a href="">購物車</a>
                 <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
                 <button class="open-modal-btn" id="openModalBtn">加入會員</button>
             </div>
@@ -35,65 +42,74 @@
         <!-- 頁首索引 -->
         <nav class="header">
             <ul class="navBar">
-                <li><a href="./myHome.html">首頁</a></li>
-                <li><a href="./newstore.html">最新優惠</a></li>
-                <li><a href="./allToy.html">所有商品</a></li>
-                <li><a href="./contactus.html">聯絡我們</a></li>
+                <li><a href="../myHome.html">首頁</a></li>
+                <li><a href="../newstore.html">最新優惠</a></li>
+                <li><a href="../allToy.html">所有商品</a></li>
+                <li><a href="../contactus.html">聯絡我們</a></li>
             </ul>
         </nav>
     </div>
-
-    <!-- 頁面資訊 -->
-    <h1 id="discount" style="text-align: center;">最新優惠</h1>
-    <hr>
-
-    <div class="newAd">
-        <!-- 優惠1 -->
-        <div class="newAditem">
-            <img src="./img/ad/saleoff72(1296x).png">
-
-            <ul>
-                <li>
-                    <strong>消費滿15000元，結帳再享72折團購優惠</strong>
-                </li>
+    <!-- 商品頁面 -->
+    <br>
+    <section>
+        <div class="upinfo">
+            <div class="toyimg" style="display: inline;"><img src="../img/store/chu_chi800x.png"></div>
+            <div class="detailinfo" style="display: inline;">
+                <h2>懶散兔與啾先生招財公仔 [啾先生]</h2><br><br>
+                <p>啾先生化身為招財公仔</p>
+                <p>讓你福氣翻倍！</p>
                 <br>
-                <li>需加入會員，才可使用此優惠。</li>
-                <li>累積消費還可升級會員等級。</li>
-                <li>團購也享有累積點數回饋。(滿100元享有1點數回饋，可全數折抵消費)。</li>
-                <li>部分優惠、特殊商品不適用此項優惠折扣。</li>
-                <li>此團購優惠無法再與其他優惠合併使用。</li>
-                <li>配送方式僅限宅配。</li>
-            </ul>
+                <p>還有招財小貓在啾先生的頭頂上加持~讓你好運滿分~</p>
+                <br><br><br>
+                <div class="toyprice">單價：$490</div>
+                <div class="buyNum">
+                    <label for="buyNum">購買數量</label>
+                    <button onclick="numMinus()">-</button>
+                    <input id="buyNum" type="text" value="1" required minlength="1" maxlength="49" size="1">
+                    <button onclick="numPlus()">+</button>
+                    <input type="button" value="加入購物車" style="background-color: rgba(224, 165, 165, 0.623);">
+                </div>
+            </div>
+        </div>
+        <div class="bottominfo">
+            <H2>商品規格</H2>
+
+            <p>公仔主要材質：塑膠（PVC）<br>
+
+                產品尺寸：啾先生約75mm（含底座）<br>
+
+                外盒尺寸：約 115 × 105 × 100 mm <br>
+
+                規格：1 個 <br>
+
+                產地：中國<br>
+
+                本商品經 ST 安全玩具認證<br>
+
+                *商品以實物為準，圖片僅供參考<br>
+
+                *公仔玩具除了機械生產外，多數塗裝為半手工塗製而成，產生些許不一樣的地方、不屬於瑕疵範圍，且製成需求
+
+                會有注塑口、組裝位子為正常的現象。<br>
+                包裝盒為保護內容物所設計，寄送時會使用紙箱包裝，因物流配送較難避免包裹碰撞，且碰撞容易造成盒子八角些許不完美，<br>若您對於商品塗製以及盒子外型較為要求，還請您審慎評估後下單，謝謝。<br>
+            </p>
+            <br>
         </div>
 
 
-        <br>
-        <!-- 優惠2 -->
-        <div class="newAditem">
-            <img src="./img/ad/loginget50(1296x).png">
-            <ul>
-                <li>
-                    <strong>『首次』</strong>加入會員即享有50元購物金
-                </li>
-                <li>加入後，每年生日月份享有100元購物金</li>
-                <li>不定時推出會員特別優惠</li>
-                <li>歡迎您加入會員唷！</li>
-            </ul>
-        </div>
-        <br>
 
-        <!-- 優惠3 -->
-        <div class="newAditem">
-            <img src="./img/ad/up680nofee(1296x).png">
-            <ul>
-                <li>任意商品消費滿680元(含)以上</li>
-                <li>即享有免運優惠(僅限台灣地區)</li>
-                <li>快將心儀的商品加入購物車購買吧！</li>
-            </ul>
-        </div>
+
+
+
+    </section>
+
+
+
+    <!-- 購物車圖 -->
+    <div>
+
+
     </div>
-
-
     <!-- 擬態窗口 加入會員-->
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -147,18 +163,7 @@
             </form>
         </div>
     </div>
-    <!--擬態窗口 購物車視窗 -->
-    <div class="myModalcart" id="modalcart">
-        <div class="modalcart-content">
-            <span class="closecart" id="closeModalcartBtn">&times;</span>
-            <h1>購物車</h1>
-            <div id="YiancartItems"></div>
-            <button class="clearCart" onclick="clearCart()">清空購物車</button>
-            <button class="toPay">前往結帳</button>
-        </div>
-    </div>
 
-    <br>
     <!-- 底部資訊 -->
     <hr>
     <div id="bottomList" style="display: flex;">
@@ -199,12 +204,13 @@
 
     </div>
 
+    <!-- 購物車Function 代入-->
+    <script src="../js/buttom.js">
+
+    </script>
     <!-- 會員功能JS帶入 -->
-    <script src="./js/joinmember.js"> </script>
-    <script src="./js/loginmember.js"></script>
-    <!-- 加入購物車 -->
-    <script src="./js/Yiancartadd.js"></script>
-    <script src="./js/Yiancartload.js"></script>
+    <script src="../js/joinmember.js"> </script>
+    <script src="../js/loginmember.js"></script>
 
 </body>
 

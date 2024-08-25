@@ -15,11 +15,6 @@
 
     <link rel="stylesheet" href="../css/toy_onlyone.css">
 
-    <!-- 先停用還要測試 -->
-    <!-- <link rel="stylesheet" href="./css/imgFlow_test.css"> -->
-
-    <!-- 不要的 -->
-    <!-- <link rel="stylesheet" href="./css/imgFlow_test2.css"> -->
 
     <style>
 
@@ -35,7 +30,7 @@
 
             <a href="../myHome.html"><img src="../img/logo/logo(100).png" class="Lo"></a>
             <div class="rightupbox">
-                <button class="openYiancart-btn" id="openYiancartBtn">購物車</ㄖ>
+                <button class="openYiancart-btn" id="openYiancartBtn"></button>
                     <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
                     <button class="open-modal-btn" id="openModalBtn">加入會員</button>
             </div>
@@ -54,16 +49,17 @@
     <br>
     <section>
         <div class="upinfo">
-            <div class="toyimg" style="display: inline;"><img id="toyimg" src="../img/store/chu_chi800x.png"></div>
+            <div class="toyimg" style="display: inline;"><img id="toyimg" src="../img/store/hat(kana)800x.png"></div>
             <div class="detailinfo" style="display: inline;">
-                <h2 class="toyName" id="toyName">懶散兔與啾先生招財公仔 [啾先生]</h2>
+                <h2 class="toyName" id="toyName">卡娜赫拉的小動物帽子收藏家PRO [單盒]</h2>
                 <br><br>
-                <p>啾先生化身為招財公仔</p>
-                <p>讓你福氣翻倍！</p>
+                <p>戴上各種帽子~跟著P助與粉紅兔兔出發旅行去！</p>
+                <p>一共5+1款公仔三大主題【翱翔太空】【蔚藍海洋】【環島追風】</p>
                 <br>
-                <p>還有招財小貓在啾先生的頭頂上加持~讓你好運滿分~</p>
-                <br><br><br>
-                <p class="toyprice" id="toyprice">單價：$490</p>
+                <p>特典機率說明: 購買單抽的機率為10:120/若於中盒賣場機率為50%</p>
+                <p>若有特典則會放置於【1.海灘小鴨】內-隨盒附上隱藏特典【充氣小鴨】一個</p>
+                <br>
+                <p class="toyprice" id="toyprice">單價：$250</p>
                 <div class="buyNum">
                     <label for="buyNum">購買數量</label>
                     <button onclick="numMinus()">-</button>
@@ -77,14 +73,23 @@
         <div class="bottominfo">
             <H2>商品規格</H2>
 
-            <p>公仔主要材質：塑膠（PVC）<br>
+            <p>*商品名稱：卡娜赫拉的小動物帽子收藏家PRO(盲盒) <br>
 
-                產品尺寸：啾先生約75mm（含底座）<br>
-
-                外盒尺寸：約 115 × 105 × 100 mm <br>
-
-                規格：1 個 <br>
-
+                *商品款式：5款+1款隱藏款 <br>
+                
+                ※本次特典已隨機包裝於 【1.海灘小鴨】款式內 <br>
+                
+                ※此為單抽賣場購買單抽的機率為10:120/若於中盒賣場機率為50% <br>
+                
+                *產品材質：塑膠(PVC) <br>
+                
+                *盲盒規格：隨機一款 <br>
+                
+                *產品尺寸：約35-55mm(不含底座) <br>
+                
+                *單盒尺寸：約75 x 75 x 55mm <br>
+                
+                *中盒尺寸：約170 x 154 x 80mm <br>
                 產地：中國<br>
 
                 本商品經 ST 安全玩具認證<br>
@@ -166,13 +171,14 @@
             </form>
         </div>
     </div>
-    <!-- 購物車視窗 -->
+    <!--擬態窗口 購物車視窗 -->
     <div class="myModalcart" id="modalcart">
         <div class="modalcart-content">
             <span class="closecart" id="closeModalcartBtn">&times;</span>
             <h1>購物車</h1>
             <div id="YiancartItems"></div>
-            <button onclick="clearCart()">清空購物車</button>
+            <button class="clearCart" onclick="clearCart()">清空購物車</button>
+            <button class="toPay">前往結帳</button>
         </div>
     </div>
 

@@ -11,15 +11,10 @@
     <link rel="stylesheet" href="./css/logo.css">
     <link rel="stylesheet" href="./css/joinmember.css">
     <link rel="stylesheet" href="./css/loginmember.css">
+    <link rel="stylesheet" href="./css/Yiancart.css">
 
     <link rel="stylesheet" href="./css/toy.css">
 
-
-    <!-- 先停用還要測試 -->
-    <!-- <link rel="stylesheet" href="./css/imgFlow_test.css"> -->
-
-    <!-- 不要的 -->
-    <!-- <link rel="stylesheet" href="./css/imgFlow_test2.css"> -->
 
     <style>
 
@@ -36,7 +31,7 @@
             <a href="#"><img src="./img/logo/logo(100).png" class="Lo"></a>
             <!-- 會員功能 -->
             <div class="rightupbox">
-                <a href="">購物車</a>
+                <button class="openYiancart-btn" id="openYiancartBtn"></button>
                 <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
                 <button class="open-modal-btn" id="openModalBtn">加入會員</button>
             </div>
@@ -62,7 +57,7 @@
         <button onclick="filterProducts('category-mj')">ㄇㄚˊ幾兔</button>
         <button onclick="filterProducts('category-jl')">角落小夥伴</button>
         <button onclick="filterProducts('category-ch')">吉伊卡哇</button>
-        
+
     </div>
     <br>
     <!-- <hr style="border: 0.5px ridge lightgray;"> -->
@@ -74,63 +69,64 @@
             <div class="toyprice">$490</div>
         </div>
         <div class="toyBox category-lt">
-            <div class="toyimg"><a href=""><img src="./img/store/chu_rabbit800x.png"></a></div>
+            <div class="toyimg"><a href="./storehtml/toy_rabbit.html"><img src="./img/store/chu_rabbit800x.png"></a>
+            </div>
             <div class="toyname">懶散兔與啾先生招財公仔 [懶散兔]</div>
             <div class="toyprice">$490</div>
         </div>
         <div class="toyBox category-ld">
-            <div class="toyimg"><a href=""><img src="./img/store/dog800x.png"></a></div>
+            <div class="toyimg"><a href="./storehtml/toy_dog.html"><img src="./img/store/dog800x.png"></a></div>
             <div class="toyname">線條小狗 - 我倆是世界第一要好 [單盒]</div>
             <div class="toyprice">$300</div>
         </div>
         <div class="toyBox category-kn">
-            <div class="toyimg"><a href=""><img src="./img/store/hat(kana)800x.png"></a></div>
+            <div class="toyimg"><a href="./storehtml/toy_hatkana.html"><img src="./img/store/hat(kana)800x.png"></a></div>
             <div class="toyname">卡娜赫拉的小動物帽子收藏家PRO [單盒]</div>
             <div class="toyprice">$250</div>
         </div>
         <div class="toyBox category-mj">
-            <div class="toyimg"><a href=""><img src="./img/store/maji800x.png"></a></div>
+            <div class="toyimg"><a href="./storehtml/toy_maji.html"><img src="./img/store/maji800x.png"></a></div>
             <div class="toyname">ㄇㄚˊ幾兔招財公仔</div>
             <div class="toyprice">$490</div>
         </div>
         <div class="toyBox category-jl">
-            <div class="toyimg"><a href=""><img src="./img/store/mini800x.png"></a></div>
+            <div class="toyimg"><a href="./storehtml/toy_mini.html"><img src="./img/store/mini800x.png"></a></div>
             <div class="toyname">角落小夥伴的森林探險 [單盒]</div>
             <div class="toyprice">$169</div>
         </div>
         <div class="toyBox category-kn">
-            <div class="toyimg"><a href=""><img src="./img/store/pinkrabbit(kana)800x.png"></a></div>
+            <div class="toyimg"><a href="./storehtml/toy_pinkrabbit.html"><img src="./img/store/pinkrabbit(kana)800x.png"></a></div>
             <div class="toyname">卡娜赫拉的小動物祈願達摩 [單盒]</div>
             <div class="toyprice">$250</div>
         </div>
         <div class="toyBox category-ld">
-            <div class="toyimg"><a href=""><img src="./img/store/doll/dog1 800x.png"></a></div>
+            <div class="toyimg"><a href="./storehtml/toy_dolldog1.html"><img src="./img/store/doll/dog1 800x.png"></a></div>
             <div class="toyname">線條小狗絨毛娃娃(睡衣款)</div>
             <div class="toyprice">$395</div>
         </div>
         <div class="toyBox category-ld">
-            <div class="toyimg"><a href=""><img src="./img/store/doll/dog2 800x.png"></a></div>
+            <div class="toyimg"><a href="./storehtml/toy_dolldog2.html"><img src="./img/store/doll/dog2 800x.png"></a></div>
             <div class="toyname">線條小狗絨毛娃娃(斗篷款)</div>
             <div class="toyprice">$395</div>
         </div>
         <div class="toyBox category-ld">
-            <div class="toyimg"><a href=""><img src="./img/store/doll/dog3 800x.png"></a></div>
+            <div class="toyimg"><a href="./storehtml/toy_dolldog3.html"><img src="./img/store/doll/dog3 800x.png"></a></div>
             <div class="toyname">線條小狗絨毛娃娃(圍裙款)</div>
             <div class="toyprice">$395</div>
         </div>
-        
+
         <div class="toyBox category-kn">
-            <div class="toyimg"><a href=""><img src="./img/store/doll/pseki(kana)800x.png"></a></div>
+            <div class="toyimg"><a href="./storehtml/toy_dollpsekikana.html"><img src="./img/store/doll/pseki(kana)800x.png"></a></div>
             <div class="toyname">卡娜赫拉的小動物 頭型抱枕(P助)</div>
             <div class="toyprice">$221</div>
         </div>
         <div class="toyBox category-kn">
-            <div class="toyimg"><a href=""><img src="./img/store/doll/rabbit(kana)800x.png"></a></div>
+            <div class="toyimg"><a href="./storehtml/toy_dollrabbitkana.html"><img src="./img/store/doll/rabbit(kana)800x.png"></a></div>
             <div class="toyname">卡娜赫拉的小動物 頭型抱枕(兔兔)</div>
             <div class="toyprice">$221</div>
         </div>
         <div class="toyBox category-jl">
-            <div class="toyimg"><a href=""><img src="./img/store/doll/small800x.png"></a></div>
+            <div class="toyimg"><a href="./storehtml/toy_dollsmall.html"><img src="./img/store/doll/small800x.png"></a></div>
             <div class="toyname">18吋角落小夥伴花園 玩偶 [炸蝦尾]</div>
             <div class="toyprice">$480</div>
         </div>
@@ -267,6 +263,16 @@
             </form>
         </div>
     </div>
+    <!--擬態窗口 購物車視窗 -->
+    <div class="myModalcart" id="modalcart">
+        <div class="modalcart-content">
+            <span class="closecart" id="closeModalcartBtn">&times;</span>
+            <h1>購物車</h1>
+            <div id="YiancartItems"></div>
+            <button class="clearCart" onclick="clearCart()">清空購物車</button>
+            <button class="toPay">前往結帳</button>
+        </div>
+    </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <!-- 底部資訊 -->
@@ -313,27 +319,10 @@
     <script src="./js/joinmember.js"> </script>
     <script src="./js/loginmember.js"></script>
     <!-- 顯示商品功能 -->
-    <script>
-
-        function filterProducts(category) {
-            const products = document.querySelectorAll('.toyBox');
-
-            products.forEach(product => {
-                if (category === 'all') {
-                    product.classList.add('show');
-                } else {
-                    if (product.classList.contains(category)) {
-                        product.classList.add('show');
-                    } else {
-                        product.classList.remove('show');
-                    }
-                }
-            });
-        }
-
-        // 初始顯示全部商品
-        filterProducts('all');
-    </script>
+    <script src="./js/alltoycontrol.js"></script>
+    <!-- 加入購物車 -->
+    <script src="./js/Yiancartadd.js"></script>
+    <script src="./js/Yiancartload.js"></script>
 </body>
 
 </html>

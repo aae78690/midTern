@@ -1,4 +1,4 @@
-.outwindow{
+.outwindow {
     /* border: 1px solid green; */
     display: flex;
     justify-content: center;
@@ -33,12 +33,12 @@
 }
 
 .form-group input[type="text"],
-.form-group input[type="email"]
- {
-    width:400px;
+.form-group input[type="email"],
+.form-group textarea{
+    width: 400px;
     padding: 8px;
     box-sizing: border-box;
-    border: 1px solid ;
+    border: 1px solid;
     border-radius: 4px;
 }
 
@@ -59,16 +59,30 @@
 .form-group button:hover {
     background-color: #a05a45;
 }
-.contactinfo{
+
+.contactinfo {
     margin: 0;
     padding: 10px;
 
 }
-.contactinfo h2{
-    text-align:center;
+
+.contactinfo h2 {
+    text-align: center;
 }
-.contactinfo ul li{
-    padding: 10px; ;
+
+.contactinfo ul li {
+    padding: 10px;
+    ;
     list-style-type: none;
     font-size: 18px;
+}
+
+.othercontact {
+    margin: 0;
+    padding: 15px;
+}
+
+.othercontact img {
+    display: inline-block;
+    margin: 0 10px;
 }
