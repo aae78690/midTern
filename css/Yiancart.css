@@ -65,13 +65,18 @@
       margin-bottom: 20px;
   }
 
-  .YiancartItems p {
+  /* .YiancartItems p {
+      display: inline-block;
       text-align: left;
   }
 
+  .YiancartItems img {
+      display: inline-block;
+  } */
+
   .clearCart,
   .removeItem,
-  .toPay{
+  .toPay {
       border: none;
       font-size: 18px;
       border-radius: 3px;

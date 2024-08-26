@@ -31,8 +31,8 @@
             <a href="../myHome.html"><img src="../img/logo/logo(100).png" class="Lo"></a>
             <div class="rightupbox">
                 <button class="openYiancart-btn" id="openYiancartBtn"></button>
-                    <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
-                    <button class="open-modal-btn" id="openModalBtn">加入會員</button>
+                <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
+                <button class="open-modal-btn" id="openModalBtn">加入會員</button>
             </div>
         </div>
         <!-- 頁首索引 -->
@@ -80,19 +80,19 @@
                 款式：8+2+1 <br>
 
                 規格：一中盒內包含8個小盒<br>
-                
+
                 款式機率：<br>
-                
+
                 常規款：1/8 <br>
                 小隱藏：每款2/96 <br>
                 大隱藏：1/96 <br>
-                
+
                 產品尺寸：約高8.2 公分 <br>
-                
+
                 中盒尺寸：約46.4 x 17.4 x 27公分 <br>
-                
+
                 單盒尺寸：約11.5 x 8.4 x 11.6公分 <br>
-                
+
                 (每款尺寸略有差異，請依實際商品為主) <br>
                 產地：中國<br>
 
@@ -170,6 +170,26 @@
                         required>
                 </div>
                 <div class="loginmember">
+                    <button type="submit">送出</button>
+                </div>
+            </form>
+            <hr>
+            <div class="otherchoice">
+                <button onclick="" id="forgetpw">忘記密碼?</button><button onclick="" id="joinin">加入會員</button>
+            </div>
+        </div>
+    </div>
+    <!-- 擬態窗口 忘記密碼視窗 -->
+    <div id="myModalfg" class="modalfg">
+        <div class="modalfg-content">
+            <span class="closefg" id="closeModalfgBtn">&times;</span>
+            <h2>會員登入</h2>
+            <form>
+                <div class="fgmember">
+                    <label for="fgemail">請輸入電子信箱:</label>
+                    <input type="fgemail" id="fgemail" name="fgemail" required>
+                </div>
+                <div class="fgmember">
                     <button type="submit">送出</button>
                 </div>
             </form>

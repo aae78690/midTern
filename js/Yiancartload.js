@@ -27,11 +27,13 @@ function loadCart() {
         Yiancart.forEach(function(item, index) {
             var itemElement = document.createElement("div");
             itemElement.innerHTML = `
+                <img src="${item.image}" alt="商品圖片" width="100" style="display: inline-block; vertical-align: middle;">
+                <div style="display: inline-block; vertical-align: middle;">
                 <p>商品名稱： ${item.name}</p>
-                <p> ${item.price}</p>
-                <p>購買數量： ${item.quantity}</p>
-                <img src="${item.image}" alt="商品圖片" width="100"> <!-- 顯示商品圖片 -->
-                <br>
+                <p> ${item.price}&nbsp&nbsp
+                購買數量： ${item.quantity}</p>
+                </div>
+                <br><br>
                 <button class="removeItem" onclick="removeItem(${index})">刪除</button>
             `;
             YiancartContainer.appendChild(itemElement);

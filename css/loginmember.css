@@ -51,16 +51,6 @@
     font-size: 16px;
     cursor: pointer;
 }
-/* 表單樣式 */
-/* .form-container {
-    max-width: 100%;
-    margin: 0 5px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-} */
-
 .modallogin-content h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -97,5 +87,94 @@
 }
 
 .loginmember button:hover {
+    background-color: #45a049;
+}
+/* 下列有空再做 */
+.otherchoice{
+    text-align: center;
+}
+.otherchoice button{
+    background: transparent;
+    border: none;
+    margin:10px;
+}
+#forgetpw,#joinin{
+    color: blue;
+}
+#forgetpw:hover,#joinin:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* 忘記密碼的部分 */
+/* 模糊背景 */
+.modalfg {
+    display: none;
+    /* 隱藏模態窗口 */
+    position: fixed;
+    /* 固定在視窗上 */
+    z-index: 1;
+    /* 保持在前面 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 半透明背景 */
+}
+
+/* 視窗內容 */
+.modalfg-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+/* 關閉按鈕 */
+.closefg {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.closefg:hover,
+.closefg:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.fgmember{
+    margin-bottom: 15px;
+}
+.fgmember label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+.fgmember input{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.fgmember button{
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.fgmember button:hover {
     background-color: #45a049;
 }

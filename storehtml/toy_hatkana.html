@@ -31,8 +31,8 @@
             <a href="../myHome.html"><img src="../img/logo/logo(100).png" class="Lo"></a>
             <div class="rightupbox">
                 <button class="openYiancart-btn" id="openYiancartBtn"></button>
-                    <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
-                    <button class="open-modal-btn" id="openModalBtn">加入會員</button>
+                <button class="open-modallogin-btn" id="openModalloginBtn">會員登入</button>
+                <button class="open-modal-btn" id="openModalBtn">加入會員</button>
             </div>
         </div>
         <!-- 頁首索引 -->
@@ -76,19 +76,19 @@
             <p>*商品名稱：卡娜赫拉的小動物帽子收藏家PRO(盲盒) <br>
 
                 *商品款式：5款+1款隱藏款 <br>
-                
+
                 ※本次特典已隨機包裝於 【1.海灘小鴨】款式內 <br>
-                
+
                 ※此為單抽賣場購買單抽的機率為10:120/若於中盒賣場機率為50% <br>
-                
+
                 *產品材質：塑膠(PVC) <br>
-                
+
                 *盲盒規格：隨機一款 <br>
-                
+
                 *產品尺寸：約35-55mm(不含底座) <br>
-                
+
                 *單盒尺寸：約75 x 75 x 55mm <br>
-                
+
                 *中盒尺寸：約170 x 154 x 80mm <br>
                 產地：中國<br>
 
@@ -166,6 +166,26 @@
                         required>
                 </div>
                 <div class="loginmember">
+                    <button type="submit">送出</button>
+                </div>
+            </form>
+            <hr>
+            <div class="otherchoice">
+                <button onclick="" id="forgetpw">忘記密碼?</button><button onclick="" id="joinin">加入會員</button>
+            </div>
+        </div>
+    </div>
+    <!-- 擬態窗口 忘記密碼視窗 -->
+    <div id="myModalfg" class="modalfg">
+        <div class="modalfg-content">
+            <span class="closefg" id="closeModalfgBtn">&times;</span>
+            <h2>會員登入</h2>
+            <form>
+                <div class="fgmember">
+                    <label for="fgemail">請輸入電子信箱:</label>
+                    <input type="fgemail" id="fgemail" name="fgemail" required>
+                </div>
+                <div class="fgmember">
                     <button type="submit">送出</button>
                 </div>
             </form>

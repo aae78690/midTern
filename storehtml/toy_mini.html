@@ -138,28 +138,48 @@
         </div>
     </div>
 
-    <!-- 擬態窗口 會員登入 -->
-    <div id="myModallogin" class="modallogin">
-        <div class="modallogin-content">
-            <span class="closelogin" id="closeModalloginBtn">&times;</span>
-            <h2>會員登入</h2>
-            <form>
-                <div class="loginmember">
-                    <label for="name">帳號:</label>
-                    <input type="text" id="account" name="account" pattern="[A-Za-z0-9]{8,}" title="至少填入8位英文或數字"
-                        required>
-                </div>
-                <div class="loginmember">
-                    <label for="name">密碼:</label>
-                    <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{3,}" title="請至少填入3位英文或數字"
-                        required>
-                </div>
-                <div class="loginmember">
-                    <button type="submit">送出</button>
-                </div>
-            </form>
+   <!-- 擬態窗口 會員登入 -->
+   <div id="myModallogin" class="modallogin">
+    <div class="modallogin-content">
+        <span class="closelogin" id="closeModalloginBtn">&times;</span>
+        <h2>會員登入</h2>
+        <form>
+            <div class="loginmember">
+                <label for="name">帳號:</label>
+                <input type="text" id="account" name="account" pattern="[A-Za-z0-9]{8,}" title="至少填入8位英文或數字"
+                    required>
+            </div>
+            <div class="loginmember">
+                <label for="name">密碼:</label>
+                <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{3,}" title="請至少填入3位英文或數字"
+                    required>
+            </div>
+            <div class="loginmember">
+                <button type="submit">送出</button>
+            </div>
+        </form>
+        <hr>
+        <div class="otherchoice">
+            <button onclick="" id="forgetpw">忘記密碼?</button><button onclick="" id="joinin">加入會員</button>
         </div>
     </div>
+</div>
+<!-- 擬態窗口 忘記密碼視窗 -->
+<div id="myModalfg" class="modalfg">
+    <div class="modalfg-content">
+        <span class="closefg" id="closeModalfgBtn">&times;</span>
+        <h2>會員登入</h2>
+        <form>
+            <div class="fgmember">
+                <label for="fgemail">請輸入電子信箱:</label>
+                <input type="fgemail" id="fgemail" name="fgemail" required>
+            </div>
+            <div class="fgmember">
+                <button type="submit">送出</button>
+            </div>
+        </form>
+    </div>
+</div>
     <!--擬態窗口 購物車視窗 -->
     <div class="myModalcart" id="modalcart">
         <div class="modalcart-content">
