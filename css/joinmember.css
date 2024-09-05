@@ -4,7 +4,7 @@
     /* 隱藏模態窗口 */
     position: fixed;
     /* 固定在視窗上 */
-    z-index: 1;
+    z-index: 6;
     /* 保持在前面 */
     left: 0;
     top: 0;

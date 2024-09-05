@@ -28,7 +28,7 @@
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 1;
 }
 
 .prev {

@@ -65,10 +65,13 @@ section {
     background-color:rgb(255, 219, 173) ;
 
 }
+/*控制商品分類*/
 .show {
     display: block;
     /* 顯示選中的商品 */
 }
+
+
 #newtoy::before{
     content: "新品✧";
     color: brown;
