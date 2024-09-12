@@ -1,17 +1,18 @@
 /* 包住上方畫面的外框 */
 .upinfo {
     /* width: 800px; */
-    margin: auto;
+    margin: 5px;
     border: dotted 5px rgb(252, 230, 216);
     border-radius: 5px;
     overflow: hidden;
     background-color: rgb(255, 252, 238);
+
 }
 
 /* 包住圖片的外框 */
 .toyimg {
     background-color: aqua;
-    width: 600px;
+    max-width: 600px;
     /*圖片在左邊*/
     float: left;
     /* padding: 20px; */
@@ -30,13 +31,17 @@
 .detailinfo {
     float: left;
     margin: 0px 0px 0px 50px;
-    width: 430px;
+    max-width: 430px;
     padding: 20px 20px 0px 0px;
-
+    box-sizing: border-box;
 }
 
 .detailinfo p {
+    margin: 0px 0px 0px 10px;
+    padding-right: 10px;
+    max-width: 400px;
     font-size: 18px;
+    box-sizing: border-box;
 }
 
 .toyprice {

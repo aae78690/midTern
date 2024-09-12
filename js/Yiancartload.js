@@ -33,7 +33,7 @@ function loadCart() {
                 <p> ${item.price}&nbsp&nbsp
                 購買數量： ${item.quantity}</p>
                 </div>
-                <br><br>
+                <br>
                 <button class="removeItem" onclick="removeItem(${index})">刪除</button>
             `;
             YiancartContainer.appendChild(itemElement);

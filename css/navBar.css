@@ -6,6 +6,8 @@ h1{
 body{
     font-family: Arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
     background-color: rgb(255, 240, 213);
+    margin: 0;
+    /* padding: 0; */
 }
 /* 頁面索引樣式 */
 .navBar {
